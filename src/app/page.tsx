@@ -1,5 +1,12 @@
+'use client'
+
 import Image from "next/image";
 import styles from "./page.module.css";
+// src/app/page.tsx
+import dynamic from 'next/dynamic'
+import React from 'react'
+import Wallet from "./Wallet";
+// const Wallet = dynamic(() => import('./Wallet'), { ssr: false })
 
 export default function Home() {
   return (
@@ -39,6 +46,8 @@ export default function Home() {
         />
       </div>
 
+      <Wallet />
+      
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
