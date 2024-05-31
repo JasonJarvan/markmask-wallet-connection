@@ -1,3 +1,11 @@
+# Answer to Question Optional
+
+运行npm dev，打开localhost:3000, 点击Connect with MetaMask:
+
+![](./public/Connect%20Panel%201.png)
+![](./public/Connect%20Panel%202.png)
+![](./public/Connect%20Panel%203.png)
+![](./public/Connected%20Successfully.png)
 # Cyberconnect Interview
 
 ---
