@@ -2,12 +2,18 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-// src/app/page.tsx
 import dynamic from 'next/dynamic'
 import React from 'react'
 import Wallet from "./Wallet";
 // const Wallet = dynamic(() => import('./Wallet'), { ssr: false })
 
+/**
+ * Renders the Home component which displays a main section with a description, 
+ * links to external sites, and a grid of cards with information about Next.js 
+ * features and templates.
+ *
+ * @return {JSX.Element} The Home component JSX element.
+ */
 export default function Home() {
   return (
     <main className={styles.main}>

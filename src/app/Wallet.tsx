@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import { useConnect, useAccount, useSignMessage, useDisconnect } from 'wagmi'
 import { SiweMessage } from 'siwe'
-import { v4 as uuidv4 } from 'uuid' // 添加UUID库以生成随机的nonce
+import { v4 as uuidv4 } from 'uuid'
 
 export default function Wallet() {
   const { connect, connectors } = useConnect()
@@ -12,7 +12,7 @@ export default function Wallet() {
   const { signMessage } = useSignMessage()
   const [domain, setDomain] = useState('')
   const [origin, setOrigin] = useState('')
-  const [nonce, setNonce] = useState('') // 新增nonce状态
+  const [nonce, setNonce] = useState('')
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -30,7 +30,7 @@ export default function Wallet() {
       uri: origin,
       version: '1',
       chainId: 1,
-      nonce, // 使用生成的nonce
+      nonce,
     })
     return message.prepareMessage()
   }
