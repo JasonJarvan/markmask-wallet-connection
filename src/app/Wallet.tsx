@@ -42,13 +42,23 @@ export default function Wallet() {
 
   // 处理以太坊登录的方法
   const handleSignIn = async () => {
-    const newNonce = uuidv4() // 生成随机的nonce
-    setNonce(newNonce) // 设置nonce状态
+    const newNonce = uuidv4()
+    setNonce(newNonce)
     const message = createSiweMessage(address, 'Sign in with Ethereum to the app.', newNonce)
     const signature = await signMessage({ message })
     console.log('Signature:', signature)
     console.log('Nonce:', newNonce)
+  
+    const response = await fetch('/api/verify-siwe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message, signature })
+    })
+  
+    const data = await response.json()
+    console.log('Verification Response:', data)
   }
+  
 
   return (
     <div>
