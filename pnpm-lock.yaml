@@ -35,6 +35,9 @@ importers:
       siwe:
         specifier: ^2.3.2
         version: 2.3.2(ethers@6.12.1(bufferutil@4.0.8)(utf-8-validate@6.0.4))
+      uuid:
+        specifier: ^9.0.1
+        version: 9.0.1
       viem:
         specifier: ^2.13.2
         version: 2.13.2(bufferutil@4.0.8)(typescript@5.4.2)(utf-8-validate@6.0.4)
