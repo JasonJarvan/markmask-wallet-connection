@@ -1,14 +1,19 @@
-# Answer to Question Optional
+# markmask-wallet-connection
 
-运行npm dev，打开localhost:3000, 点击Connect with MetaMask:
+基于NextJS+React实现服务端渲染的Web3 小狐狸钱包链接
+
+# 运行
+
+运行`npm dev`，打开localhost:3000, 点击Connect with MetaMask:
 
 ![](./public/Connect%20Panel%201.png)
 ![](./public/Connect%20Panel%202.png)
 ![](./public/Connect%20Panel%203.png)
 ![](./public/Connected%20Successfully.png)
+
 # Cyberconnect Interview
 
----
+该仓库是CyberConnect Web3区块链公司的 前端开发工程师的笔试题的 选做题的 答案。
 
 ## **Questions (Required)**
 
